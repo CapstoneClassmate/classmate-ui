@@ -15,7 +15,7 @@ class App extends Component {
   };
 
   onFailure = (error) => {
-    alert(error);
+    alert(JSON.stringify(error));
   };
 
   googleResponse = (response) => {
