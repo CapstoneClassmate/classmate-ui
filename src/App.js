@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { GoogleLogin } from 'react-google-login';
-import * as config from './config';
 import config from './config.json'
 import * as util from './util';
 
@@ -27,7 +26,7 @@ class App extends Component {
       mode: 'cors',
       cache: 'default'
     };
-    fetch(config.ENDPOINT_URL+'/api/v1/auth/google', options).then(r => {
+    fetch(util.ENDPOINT_URL+'/api/v1/auth/google', options).then(r => {
       const token = r.headers.get('x-auth-token');
       r.json().then(user => {
         if (token) {
