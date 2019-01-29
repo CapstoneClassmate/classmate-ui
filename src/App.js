@@ -26,7 +26,7 @@ class App extends Component {
       mode: 'cors',
       cache: 'default'
     };
-    fetch(util.ENDPOINT_URL+'/api/v1/auth/google', options).then(r => {
+    fetch(util.getENDPOINT_URL() + '/api/v1/auth/google', options).then(r => {
       const token = r.headers.get('x-auth-token');
       r.json().then(user => {
         if (token) {
