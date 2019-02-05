@@ -7,7 +7,8 @@ class App extends Component {
   
   constructor() {
     super();
-    this.state = { isAuthenticated: false, user: null, token: '' };
+	this.state = { isAuthenticated: false, user: null, token: '' };
+	console.log(JSON.stringify(util));
     console.log("endpoint url:", util.getENDPOINT_URL());
   }
 
