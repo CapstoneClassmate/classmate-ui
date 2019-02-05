@@ -18,6 +18,7 @@ function NavbarC(props) {
             <Nav className="mr-auto">
                 <Nav.Link href="login.js">Login</Nav.Link>
                 <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link href="#FuckSean">Why Sean's Gum is the Antichrist</Nav.Link>
             </Nav>
             </Navbar.Collapse>
             </Navbar>;
