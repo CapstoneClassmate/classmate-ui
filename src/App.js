@@ -8,8 +8,8 @@ class App extends Component {
   constructor() {
     super();
 	this.state = { isAuthenticated: false, user: null, token: '' };
-	console.log(util);
-    console.log("endpoint url:", util.getENDPOINT_URL());
+	console.log("endpoint url:", util.getENDPOINT_URL());
+	console.log(process.env.ENDPOINT_URL);
   }
 
   logout = () => {
