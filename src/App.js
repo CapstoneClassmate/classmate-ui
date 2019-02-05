@@ -8,9 +8,6 @@ class App extends Component {
   constructor() {
     super();
 	this.state = { isAuthenticated: false, user: null, token: '' };
-	console.log("endpoint url:", util.getENDPOINT_URL());
-	console.log(process.env.ENDPOINT_URL);
-	console.log(process.env.REACT_APP_TEST);
   }
 
   logout = () => {
