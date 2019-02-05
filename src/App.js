@@ -4,10 +4,11 @@ import config from './config.json'
 import * as util from './util';
 
 class App extends Component {
-
+  
   constructor() {
     super();
     this.state = { isAuthenticated: false, user: null, token: '' };
+    console.log("endpoint url:", util.getENDPOINT_URL());
   }
 
   logout = () => {
