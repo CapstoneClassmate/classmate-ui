@@ -27,7 +27,8 @@ class App extends Component {
       cache: 'default'
     };
     fetch(util.getENDPOINT_URL() + '/api/v1/auth/google', options).then(r => {
-      const token = r.headers.get('x-auth-token');
+	  const token = r.headers.get('x-auth-token');
+	  console.log(JSON.stringify(r));
       r.json().then(user => {
         if (token) {
           this.setState({ isAuthenticated: true, user, token })
