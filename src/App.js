@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { GoogleLogin } from 'react-google-login';
 import config from './config.json'
-import * as util from './util';
+var util = require('./util');
 
 class App extends Component {
   
   constructor() {
     super();
 	this.state = { isAuthenticated: false, user: null, token: '' };
-	console.log(JSON.stringify(util));
+	console.log(util);
     console.log("endpoint url:", util.getENDPOINT_URL());
   }
 
