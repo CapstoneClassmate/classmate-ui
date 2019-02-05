@@ -33,7 +33,7 @@ class App extends Component {
         if (token) {
           this.setState({ isAuthenticated: true, user, token })
         }
-      });
+      }).catch(error => console.log(error));
     })
   };
 
